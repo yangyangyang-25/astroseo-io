@@ -1,0 +1,18 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+const { posts } = Astro.props as { posts: CollectionEntry<"posts">[] };
+---
+
+{posts.length > 0 && (
+  <section class="card">
+    <h2 style="margin-top:0;">Related posts</h2>
+    <ul style="margin:0;padding-left:18px;">
+      {posts.map((post) => (
+        <li>
+          <a href={`${import.meta.env.BASE_URL}blog/${post.slug}/`}>{post.data.title}</a>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
