@@ -4,6 +4,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
 import RelatedPosts from "../components/RelatedPosts.astro";
 import TableOfContents from "../components/TableOfContents.astro";
 import { slugify } from "../lib/content";
+import { sitePath } from "../lib/paths";
 import BaseLayout from "./BaseLayout.astro";
 
 interface Props {
@@ -14,10 +15,10 @@ interface Props {
 
 const { post, headings, relatedPosts } = Astro.props;
 const breadcrumbs = [
-  { href: import.meta.env.BASE_URL, label: "Home" },
-  { href: `${import.meta.env.BASE_URL}blog/`, label: "Blog" },
+  { href: sitePath("/"), label: "Home" },
+  { href: sitePath("/blog/"), label: "Blog" },
   {
-    href: `${import.meta.env.BASE_URL}category/${slugify(post.data.category)}/`,
+    href: sitePath(`/category/${slugify(post.data.category)}/`),
     label: post.data.category
   }
 ];

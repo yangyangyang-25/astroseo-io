@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import PostCard from "../components/PostCard.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { groupByCategory, isPublished, sortPosts, slugify } from "../lib/content";
+import { sitePath } from "../lib/paths";
 
 const allPosts = sortPosts((await getCollection("posts")).filter(isPublished));
 const featuredPosts = allPosts.slice(0, 6);
@@ -28,7 +29,7 @@ const categories = Object.entries(groupByCategory(allPosts));
     <div style="display:flex;flex-wrap:wrap;gap:12px;">
       {categories.map(([category, posts]) => (
         <a
-          href={`${import.meta.env.BASE_URL}category/${slugify(category)}/`}
+          href={sitePath(`/category/${slugify(category)}/`)}
           style="background:var(--accent-soft);padding:8px 14px;border-radius:999px;"
         >
           {category} ({posts.length})
