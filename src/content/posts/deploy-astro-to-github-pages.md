@@ -31,7 +31,7 @@ export default defineConfig({
 
 The workflow should build `dist/` and upload it as a Pages artifact. Once the
 site is live, validate feed and sitemap using
-[Astro Sitemap, RSS, and Canonical URLs](/astroseo-io/blog/astro-sitemap-rss-canonical/).
+[Astro Sitemap, RSS, and Canonical URLs](/blog/astro-sitemap-rss-canonical/).
 
 ## Final checklist
 

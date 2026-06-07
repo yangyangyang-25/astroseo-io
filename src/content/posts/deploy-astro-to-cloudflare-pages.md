@@ -28,7 +28,7 @@ npm run build
 ## Implementation notes
 
 If you are validating locally first, compare this flow with
-[Deploy Astro to GitHub Pages](/astroseo-io/blog/deploy-astro-to-github-pages/).
+[Deploy Astro to GitHub Pages](/blog/deploy-astro-to-github-pages/).
 The main difference is base URL handling.
 
 ## Final checklist

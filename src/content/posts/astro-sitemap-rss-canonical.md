@@ -29,7 +29,7 @@ integrations: [mdx(), sitemap()]
 
 Robots and canonical URLs should agree with the same site URL and base path.
 Pair this with the breadcrumb structure in
-[Astro Breadcrumb SEO](/astroseo-io/blog/astro-breadcrumb-seo/).
+[Astro Breadcrumb SEO](/blog/astro-breadcrumb-seo/).
 
 ## Final checklist
 

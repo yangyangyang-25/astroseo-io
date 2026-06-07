@@ -28,7 +28,7 @@ const { Content, headings } = await post.render();
 
 Keep the TOC secondary on mobile and sticky on larger screens. The next related
 layer is covered in
-[Astro Related Posts Tutorial](/astroseo-io/blog/astro-related-posts-tutorial/).
+[Astro Related Posts Tutorial](/blog/astro-related-posts-tutorial/).
 
 ## Final checklist
 

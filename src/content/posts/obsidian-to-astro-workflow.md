@@ -29,7 +29,7 @@ Obsidian draft -> frontmatter check -> repo content folder -> build -> deploy
 
 Do not let free-form note structure leak into production content. Use the content
 schema from
-[Astro Content Collections Tutorial](/astroseo-io/blog/astro-content-collections-tutorial/).
+[Astro Content Collections Tutorial](/blog/astro-content-collections-tutorial/).
 
 ## Final checklist
 

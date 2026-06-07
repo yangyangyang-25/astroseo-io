@@ -28,7 +28,7 @@ const tagScore = post.data.tags.filter((tag) => current.data.tags.includes(tag))
 ## Implementation notes
 
 Use deterministic rules so the build stays reproducible. This pairs naturally with
-[Obsidian to Astro Workflow](/astroseo-io/blog/obsidian-to-astro-workflow/).
+[Obsidian to Astro Workflow](/blog/obsidian-to-astro-workflow/).
 
 ## Final checklist
 

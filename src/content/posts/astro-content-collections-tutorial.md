@@ -37,7 +37,7 @@ const posts = defineCollection({
 
 Use categories and tags in the schema from day one. That will make category pages
 and tag pages trivial to generate later. Pair this with the archive structure in
-[Astro Blog SEO Tutorial](/astroseo-io/blog/astro-blog-seo-tutorial/).
+[Astro Blog SEO Tutorial](/blog/astro-blog-seo-tutorial/).
 
 ## Final checklist
 

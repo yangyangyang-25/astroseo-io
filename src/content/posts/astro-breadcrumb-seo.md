@@ -29,7 +29,7 @@ Start with a simple UI breadcrumb component before adding structured data.
 ## Implementation notes
 
 Use the post category to build the last ancestor link. This pattern works well
-with [Astro Table of Contents for Long Posts](/astroseo-io/blog/astro-table-of-contents-blog/).
+with [Astro Table of Contents for Long Posts](/blog/astro-table-of-contents-blog/).
 
 ## Final checklist
 

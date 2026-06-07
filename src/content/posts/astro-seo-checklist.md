@@ -28,7 +28,7 @@ check -> build -> inspect dist -> deploy -> inspect production URLs
 
 Treat the checklist as operational documentation, not just a blog post. It should
 point back to tactical setup guides such as
-[Astro Sitemap, RSS, and Canonical URLs](/astroseo-io/blog/astro-sitemap-rss-canonical/).
+[Astro Sitemap, RSS, and Canonical URLs](/blog/astro-sitemap-rss-canonical/).
 
 ## Final checklist
 

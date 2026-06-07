@@ -31,7 +31,7 @@ and human-readable.
 
 Start with a clean content model, then add feed and sitemap generation. The
 deployment side is covered in
-[Deploy Astro to GitHub Pages](/astroseo-io/blog/deploy-astro-to-github-pages/).
+[Deploy Astro to GitHub Pages](/blog/deploy-astro-to-github-pages/).
 
 ## Final checklist
 
