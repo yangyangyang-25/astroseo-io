@@ -5,7 +5,7 @@ export const siteConfig = {
     "Practical Astro guides for SEO blogs, content workflows, and static deployment.",
   repo: "astroseo-io",
   basePath: "/astroseo-io",
-  siteUrl: "https://yangjun.github.io",
+  siteUrl: "https://yangyangyang-25.github.io",
   nav: [
     { href: "/", label: "Home" },
     { href: "/blog/", label: "Blog" },
