@@ -39,4 +39,4 @@ This document is the source of truth for reducing the original 50 posts to 22 re
 | deploy-astro-to-cloudflare-pages | retain | deploy-astro-to-cloudflare-pages | Deployment pillar and production platform. | Preview deployments and cache behavior | no |
 | deploy-astro-to-github-pages | retain | deploy-astro-to-github-pages | Focused alternative deployment tutorial. | Actions workflow and custom domain setup | no |
 | deploy-astro-to-netlify | merge | astro-static-site-architecture | A separate shallow provider guide adds little value. | Hosting trade-off row and migration notes | yes |
-| deploy-astro-to-vercel | merge | astro-static-site-architecture 
+| deploy-astro-to-vercel | merge | astro-static-site-architecture

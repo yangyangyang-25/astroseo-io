@@ -81,7 +81,10 @@ for (const file of files) {
   }
   const normalized = (result.trim().slice(0, 6000) || "Command completed without text output.")
     .replaceAll(root, "<repo>")
-    .replaceAll("/Users/yangjun", "<home>");
+    .replaceAll("/Users/yangjun", "<home>")
+    .split("\n")
+    .map((line) => line.trimEnd())
+    .join("\n");
   await writeFile(path.join(evidenceRoot, slug, "result.txt"), `${normalized}\n`);
   await renderEvidence(slug, command, normalized);
   console.log(`Captured ${slug}`);

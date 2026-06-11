@@ -1,15 +1,91 @@
-.gitignore                        |   1 +
- docs/content-consolidation-map.md |  58 +++++++++
- package.json                      |   2 +
- public/_redirects                 |  28 ++++
- scripts/content-audit.mjs         | 263 ++++++++++++++++++++++++++++++++++++++
- scripts/content-audit.test.mjs    | 180 ++++++++++++++++++++++++++
- src/components/Footer.astro       |  22 +++-
- src/config/site.ts                |   4 +
- src/pages/about.astro             |  41 +++++-
- src/pages/contact.astro           |  35 +++++
- src/pages/disclaimer.astro        |  43 +++++++
- src/pages/privacy.astro           |  46 +++++++
- src/pages/terms.astro             |  43 +++++++
- src/styles/global.css             | 121 ++++++++++++++++++
- 14 files changed, 877 insertions(+), 10 deletions(-)
+.../evidence/astro-blog-post-template/evidence.png | Bin 0 -> 148524 bytes
+ .../evidence/astro-blog-post-template/result.txt   |  48 +++++++
+ .../evidence/astro-blog-post-template/source.txt   |   1 +
+ .../evidence/astro-blog-seo-tutorial/evidence.png  | Bin 0 -> 31602 bytes
+ .../evidence/astro-blog-seo-tutorial/result.txt    |   1 +
+ .../evidence/astro-blog-seo-tutorial/source.txt    |   1 +
+ .../evidence.png                                   | Bin 0 -> 244195 bytes
+ .../astro-content-collections-tutorial/result.txt  |  29 +++++
+ .../astro-content-collections-tutorial/source.txt  |   1 +
+ .../astro-dynamic-routes-content/evidence.png      | Bin 0 -> 172290 bytes
+ .../astro-dynamic-routes-content/result.txt        |  51 ++++++++
+ .../astro-dynamic-routes-content/source.txt        |   1 +
+ .../astro-image-optimization-guide/evidence.png    | Bin 0 -> 153000 bytes
+ .../astro-image-optimization-guide/result.txt      |  20 +++
+ .../astro-image-optimization-guide/source.txt      |   1 +
+ .../astro-internal-linking-guide/evidence.png      | Bin 0 -> 148274 bytes
+ .../astro-internal-linking-guide/result.txt        |  23 ++++
+ .../astro-internal-linking-guide/source.txt        |   1 +
+ .../evidence/astro-mdx-seo-workflow/evidence.png   | Bin 0 -> 36670 bytes
+ .../evidence/astro-mdx-seo-workflow/result.txt     |   3 +
+ .../evidence/astro-mdx-seo-workflow/source.txt     |   1 +
+ .../astro-sitemap-rss-canonical/evidence.png       | Bin 0 -> 366059 bytes
+ .../astro-sitemap-rss-canonical/result.txt         |   1 +
+ .../astro-sitemap-rss-canonical/source.txt         |   1 +
+ .../astro-static-site-architecture/evidence.png    | Bin 0 -> 44824 bytes
+ .../astro-static-site-architecture/result.txt      |  12 ++
+ .../astro-static-site-architecture/source.txt      |   1 +
+ .../astro-table-of-contents-blog/evidence.png      | Bin 0 -> 78012 bytes
+ .../astro-table-of-contents-blog/result.txt        |  18 +++
+ .../astro-table-of-contents-blog/source.txt        |   1 +
+ .../evidence/ci-build-checks-astro/evidence.png    | Bin 0 -> 158973 bytes
+ .../evidence/ci-build-checks-astro/result.txt      | 138 +++++++++++++++++++++
+ .../evidence/ci-build-checks-astro/source.txt      |   1 +
+ .../deploy-astro-to-cloudflare-pages/evidence.png  | Bin 0 -> 184835 bytes
+ .../deploy-astro-to-cloudflare-pages/result.txt    | 121 ++++++++++++++++++
+ .../deploy-astro-to-cloudflare-pages/source.txt    |   1 +
+ .../deploy-astro-to-github-pages/evidence.png      | Bin 0 -> 90453 bytes
+ .../deploy-astro-to-github-pages/result.txt        |  43 +++++++
+ .../deploy-astro-to-github-pages/source.txt        |   1 +
+ .../github-pages-base-path-guide/evidence.png      | Bin 0 -> 18826 bytes
+ .../github-pages-base-path-guide/result.txt        |   1 +
+ .../github-pages-base-path-guide/source.txt        |   1 +
+ .../evidence.png                                   | Bin 0 -> 112351 bytes
+ .../result.txt                                     |  14 +++
+ .../source.txt                                     |   1 +
+ .../keyword-to-article-brief-workflow/evidence.png | Bin 0 -> 236319 bytes
+ .../keyword-to-article-brief-workflow/result.txt   |  42 +++++++
+ .../keyword-to-article-brief-workflow/source.txt   |   1 +
+ .../markdown-link-audit-workflow/evidence.png      | Bin 0 -> 23802 bytes
+ .../markdown-link-audit-workflow/result.txt        |   1 +
+ .../markdown-link-audit-workflow/source.txt        |   1 +
+ .../obsidian-to-astro-workflow/evidence.png        | Bin 0 -> 193357 bytes
+ .../evidence/obsidian-to-astro-workflow/result.txt |  24 ++++
+ .../evidence/obsidian-to-astro-workflow/source.txt |   1 +
+ .../rollback-static-site-deployments/evidence.png  | Bin 0 -> 46585 bytes
+ .../rollback-static-site-deployments/result.txt    |   5 +
+ .../rollback-static-site-deployments/source.txt    |   1 +
+ .../schema-markup-static-blog/evidence.png         | Bin 0 -> 27945 bytes
+ .../evidence/schema-markup-static-blog/result.txt  |   1 +
+ .../evidence/schema-markup-static-blog/source.txt  |   1 +
+ .../technical-seo-audit-static-site/evidence.png   | Bin 0 -> 34179 bytes
+ .../technical-seo-audit-static-site/result.txt     |   9 ++
+ .../technical-seo-audit-static-site/source.txt     |   1 +
+ .../update-old-posts-seo-workflow/evidence.png     | Bin 0 -> 88853 bytes
+ .../update-old-posts-seo-workflow/result.txt       |  15 +++
+ .../update-old-posts-seo-workflow/source.txt       |   1 +
+ scripts/content-audit.mjs                          |   7 +-
+ scripts/content-audit.test.mjs                     |   8 ++
+ scripts/generate-evidence.mjs                      |  88 +++++++++++++
+ src/content/posts/astro-author-box-template.md     |  33 -----
+ src/content/posts/astro-blog-post-template.md      |  65 +++++++---
+ src/content/posts/astro-blog-seo-tutorial.md       |  68 ++++++----
+ src/content/posts/astro-breadcrumb-seo.md          |  38 ------
+ .../posts/astro-callout-component-template.md      |  33 -----
+ src/content/posts/astro-category-page-template.md  |  32 -----
+ .../posts/astro-comparison-table-template.md       |  33 -----
+ .../posts/astro-component-layouts-for-blogs.md     |  33 -----
+ .../posts/astro-content-collections-tutorial.md    |  74 ++++++-----
+ src/content/posts/astro-dynamic-routes-content.md  |  63 +++++++---
+ src/content/posts/astro-faq-section-template.md    |  33 -----
+ .../posts/astro-frontmatter-best-practices.md      |  34 -----
+ .../posts/astro-image-optimization-guide.md        |  63 +++++++---
+ src/content/posts/astro-internal-linking-guide.md  |  65 +++++++---
+ src/content/posts/astro-mdx-seo-workflow.md        |  65 +++++++---
+ src/content/posts/astro-pagination-seo.md          |  33 -----
+ src/content/posts/astro-related-posts-tutorial.md  |  37 ------
+ src/content/posts/astro-resource-list-template.md  |  33 -----
+ src/content/posts/astro-seo-checklist.md           |  37 ------
+ src/content/posts/astro-sitemap-rss-canonical.md   |  66 ++++++----
+ .../posts/astro-static-site-architecture.md        |  66 +++++++---
+ src/content/posts/astro-table-
