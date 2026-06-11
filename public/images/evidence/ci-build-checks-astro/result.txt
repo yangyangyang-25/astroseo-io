@@ -1,0 +1,138 @@
+> astroseo-io@0.1.0 test <repo>
+> node --test scripts/*.test.mjs
+
+✔ accepts a complete 22-article site (106.599851ms)
+✔ rejects an article count other than 22 (85.990073ms)
+✔ rejects an article without verification (65.167136ms)
+✔ rejects fewer than two contextual blog links (71.266567ms)
+✔ rejects missing evidence (64.841344ms)
+✔ rejects an evidence image without alt text (68.948763ms)
+✔ rejects a missing redirect for a merged slug (66.23302ms)
+✔ rejects a redirect chain (61.927069ms)
+✔ rejects duplicate titles (69.463339ms)
+✔ rejects banned launch-template phrases (76.977073ms)
+✔ rejects an incomplete About page (72.441342ms)
+✔ rejects missing trust links in the footer (73.956047ms)
+✔ accepts a Contact page that reads the Issues URL from site config (82.107603ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1108.967297
+
+> astroseo-io@0.1.0 audit:content <repo>
+> node scripts/content-audit.mjs
+
+{
+  "articles": 22,
+  "redirects": 28,
+  "errors": [],
+  "warnings": []
+}
+
+> astroseo-io@0.1.0 check <repo>
+> astro check
+
+16:30:53 [content] Syncing content
+16:30:53 [content] Synced content
+16:30:53 [types] Generated 571ms
+16:30:53 [check] Getting diagnostics for Astro files in <repo>...
+Result (33 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+
+> astroseo-io@0.1.0 build <repo>
+> astro build
+
+16:31:02 [content] Syncing content
+16:31:02 [content] Synced content
+16:31:02 [types] Generated 643ms
+16:31:02 [build] output: "static"
+16:31:02 [build] mode: "static"
+16:31:02 [build] directory: <repo>/dist/
+16:31:02 [build] Collecting build info...
+16:31:02 [build] ✓ Completed in 691ms.
+16:31:02 [build] Building static entrypoints...
+16:31:04 [vite] ✓ built in 1.72s
+16:31:04 [build] ✓ Completed in 1.78s.
+
+ generating static routes 
+16:31:04 ▶ src/pages/404.astro
+16:31:04   └─ /404.html (+17ms) 
+16:31:04 ▶ src/pages/about.astro
+16:31:04   └─ /about/index.html (+4ms) 
+16:31:04 ▶ src/pages/blog/[slug].astro
+16:31:04   ├─ /blog/astro-blog-post-template/index.html (+28ms) 
+16:31:04   ├─ /blog/astro-blog-seo-tutorial/index.html (+4ms) 
+16:31:04   ├─ /blog/astro-content-collections-tutorial/index.html (+4ms) 
+16:31:04   ├─ /blog/astro-dynamic-routes-content/index.html (+6ms) 
+16:31:04   ├─ /blog/astro-image-optimization-guide/index.html (+7ms) 
+16:31:04   ├─ /blog/astro-internal-linking-guide/index.html (+4ms) 
+16:31:04   ├─ /blog/astro-mdx-seo-workflow/index.html (+4ms) 
+16:31:04   ├─ /blog/astro-sitemap-rss-canonical/index.html (+5ms) 
+16:31:04   ├─ /blog/astro-static-site-architecture/index.html (+4ms) 
+16:31:04   ├─ /blog/astro-table-of-contents-blog/index.html (+4ms) 
+16:31:04   ├─ /blog/ci-build-checks-astro/index.html (+3ms) 
+16:31:04   ├─ /blog/deploy-astro-to-cloudflare-pages/index.html (+3ms) 
+16:31:04   ├─ /blog/deploy-astro-to-github-pages/index.html (+3ms) 
+16:31:04   ├─ /blog/github-pages-base-path-guide/index.html (+3ms) 
+16:31:04   ├─ /blog/keyword-to-article-brief-workflow/index.html (+3ms) 
+16:31:04   ├─ /blog/markdown-link-audit-workflow/index.html (+6ms) 
+16:31:04   ├─ /blog/indexability-checklist-content-sites/index.html (+7ms) 
+16:31:04   ├─ /blog/obsidian-to-astro-workflow/index.html (+4ms) 
+16:31:04   ├─ /blog/rollback-static-site-deployments/index.html (+4ms) 
+16:31:04   ├─ /blog/schema-markup-static-blog/index.html (+3ms) 
+16:31:04   ├─ /blog/technical-seo-audit-static-site/index.html (+3ms) 
+16:31:04   └─ /blog/update-old-posts-seo-workflow/index.html (+4ms) 
+16:31:04 ▶ src/pages/blog/index.astro
+16:31:04   └─ /blog/index.html (+5ms) 
+16:31:04 ▶ src/pages/category/[category].astro
+16:31:04   ├─ /category/templates/index.html (+3ms) 
+16:31:04   ├─ /category/seo-fundamentals/index.html (+2ms) 
+16:31:04   ├─ /category/astro-guides/index.html (+2ms) 
+16:31:04   ├─ /category/deployment/index.html (+3ms) 
+16:31:04   └─ /category/content-workflow/index.html (+4ms) 
+16:31:04 ▶ src/pages/contact.astro
+16:31:04   └─ /contact/index.html (+3ms) 
+16:31:04 ▶ src/pages/disclaimer.astro
+16:31:04   └─ /disclaimer/index.html (+2ms) 
+16:31:04 ▶ src/pages/index.astro
+16:31:04   └─ /index.html (+5ms) 
+16:31:04 ▶ src/pages/privacy.astro
+16:31:04   └─ /privacy/index.html (+3ms) 
+16:31:04 λ src/pages/rss.xml.ts
+16:31:04   └─ /rss.xml (+10ms) 
+16:31:04 ▶ src/pages/tag/[tag].astro
+16:31:04   ├─ /tag/404/index.html (+3ms) 
+16:31:04   ├─ /tag/astro/index.html (+4ms) 
+16:31:04   ├─ /tag/blog-template/index.html (+4ms) 
+16:31:04   ├─ /tag/editorial/index.html (+4ms) 
+16:31:04   ├─ /tag/technical-seo/index.html (+3ms) 
+16:31:04   ├─ /tag/blog/index.html (+2ms) 
+16:31:04   ├─ /tag/content-collections/index.html (+2ms) 
+16:31:04   ├─ /tag/validation/index.html (+2ms) 
+16:31:04   ├─ /tag/dynamic-routes/index.html (+1ms) 
+16:31:04   ├─ /tag/archives/index.html (+2ms) 
+16:31:04   ├─ /tag/images/index.html (+3ms) 
+16:31:04   ├─ /tag/performance/index.html (+3ms) 
+16:31:04   ├─ /tag/internal-links/index.html (+2ms) 
+16:31:04   ├─ /tag/content-architecture/index.html (+3ms) 
+16:31:04   ├─ /tag/mdx/index.html (+3ms) 
+16:31:04   ├─ /tag/components/index.html (+3ms) 
+16:31:04   ├─ /tag/sitemap/index.html (+2ms) 
+16:31:04   ├─ /tag/rss/index.html (+2ms) 
+16:31:04   ├─ /tag/architecture/index.html (+2ms) 
+16:31:04   ├─ /tag/static-site/index.html (+3ms) 
+16:31:04   ├─ /tag/table-of-contents/index.html (+3ms) 
+16:31:04   ├─ /tag/accessibility/index.html (+4ms) 
+16:31:04   ├─ /tag/ci/index.html (+4ms) 
+16:31:04   ├─ /tag/github-actions/index.html (+4ms) 
+16:31:04   ├─ /tag/cloudflare-pages/index.html (+2ms) 
+16:31:04   ├─ /tag/deployment/index.html (+2ms) 
+16:31:04   ├─ /tag/github-pages/index.html (+1ms) 
+16:31:04   ├─ /tag/base-path/

@@ -158,7 +158,12 @@ async function validatePages(rootDir, errors) {
   const contact = path.join(rootDir, "src/pages/contact.astro");
   if (await exists(contact)) {
     const source = await readFile(contact, "utf8");
-    if (!/github\.com\/[^/]+\/[^/]+\/issues/.test(source)) errors.push("contact: missing GitHub Issues URL");
+    const configFile = path.join(rootDir, "src/config/site.ts");
+    const configSource = (await exists(configFile)) ? await readFile(configFile, "utf8") : "";
+    const hasIssuesUrl =
+      /github\.com\/[^/]+\/[^/]+\/issues/.test(source) ||
+      (/siteConfig\.issuesUrl/.test(source) && /issuesUrl:\s*["']https:\/\/github\.com\/[^/]+\/[^/]+\/issues["']/.test(configSource));
+    if (!hasIssuesUrl) errors.push("contact: missing GitHub Issues URL");
     if (/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i.test(source)) errors.push("contact: public email address is not allowed");
   }
 

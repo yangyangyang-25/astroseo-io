@@ -178,3 +178,11 @@ test("rejects missing trust links in the footer", async () => {
   const report = await auditSite(root);
   assert.match(report.errors.join("\n"), /footer: missing link: \/privacy\//);
 });
+
+test("accepts a Contact page that reads the Issues URL from site config", async () => {
+  const root = await fixtureSite();
+  await write(root, "src/pages/contact.astro", "<a href={siteConfig.issuesUrl}>Issues</a> Do not submit sensitive data.");
+  await write(root, "src/config/site.ts", 'export const siteConfig = { siteUrl: "https://example.com", issuesUrl: "https://github.com/example/site/issues" };\n');
+  const report = await auditSite(root);
+  assert.doesNotMatch(report.errors.join("\n"), /contact: missing GitHub Issues URL/);
+});

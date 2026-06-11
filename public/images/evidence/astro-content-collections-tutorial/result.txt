@@ -1,0 +1,29 @@
+> astroseo-io@0.1.0 check <repo>
+> astro check
+
+16:30:42 [content] Syncing content
+16:30:42 [WARN] [glob-loader] Duplicate id "astro-blog-post-template" found in <repo>/src/content/posts/astro-blog-post-template.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "astro-blog-seo-tutorial" found in <repo>/src/content/posts/astro-blog-seo-tutorial.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "astro-content-collections-tutorial" found in <repo>/src/content/posts/astro-content-collections-tutorial.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "astro-dynamic-routes-content" found in <repo>/src/content/posts/astro-dynamic-routes-content.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "astro-image-optimization-guide" found in <repo>/src/content/posts/astro-image-optimization-guide.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "astro-sitemap-rss-canonical" found in <repo>/src/content/posts/astro-sitemap-rss-canonical.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "astro-mdx-seo-workflow" found in <repo>/src/content/posts/astro-mdx-seo-workflow.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "astro-internal-linking-guide" found in <repo>/src/content/posts/astro-internal-linking-guide.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "astro-static-site-architecture" found in <repo>/src/content/posts/astro-static-site-architecture.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "astro-table-of-contents-blog" found in <repo>/src/content/posts/astro-table-of-contents-blog.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "github-pages-base-path-guide" found in <repo>/src/content/posts/github-pages-base-path-guide.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "indexability-checklist-content-sites" found in <repo>/src/content/posts/indexability-checklist-content-sites.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "deploy-astro-to-cloudflare-pages" found in <repo>/src/content/posts/deploy-astro-to-cloudflare-pages.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "keyword-to-article-brief-workflow" found in <repo>/src/content/posts/keyword-to-article-brief-workflow.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "deploy-astro-to-github-pages" found in <repo>/src/content/posts/deploy-astro-to-github-pages.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "rollback-static-site-deployments" found in <repo>/src/content/posts/rollback-static-site-deployments.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "obsidian-to-astro-workflow" found in <repo>/src/content/posts/obsidian-to-astro-workflow.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "markdown-link-audit-workflow" found in <repo>/src/content/posts/markdown-link-audit-workflow.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "schema-markup-static-blog" found in <repo>/src/content/posts/schema-markup-static-blog.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "ci-build-checks-astro" found in <repo>/src/content/posts/ci-build-checks-astro.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "technical-seo-audit-static-site" found in <repo>/src/content/posts/technical-seo-audit-static-site.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [WARN] [glob-loader] Duplicate id "update-old-posts-seo-workflow" found in <repo>/src/content/posts/update-old-posts-seo-workflow.md. Later items with the same id will overwrite earlier ones.
+16:30:42 [content] Synced content
+16:30:42 [types] Generated 947ms
+16:30:42 [check] Getting diagnostics for Astro files in <home>/Documen

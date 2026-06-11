@@ -1,0 +1,9 @@
+> astroseo-io@0.1.0 audit:content <repo>
+> node scripts/content-audit.mjs
+
+{
+  "articles": 22,
+  "redirects": 28,
+  "errors": [],
+  "warnings": []
+}

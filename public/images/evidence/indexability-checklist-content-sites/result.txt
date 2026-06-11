@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://astroseo-io.pages.dev/sitemap-index.xml
+https://astroseo-io.pages.dev/
+https://astroseo-io.pages.dev/about/
+https://astroseo-io.pages.dev/blog/
+https://astroseo-io.pages.dev/blog/astro-blog-post-template/
+https://astroseo-io.pages.dev/blog/astro-blog-seo-tutorial/
+https://astroseo-io.pages.dev/blog/astro-content-collections-tutorial/
+https://astroseo-io.pages.dev/blog/astro-dynamic-routes-content/
+https://astroseo-io.pages.dev/blog/astro-image-optimization-guide/
+https://astroseo-io.pages.dev/blog/astro-internal-linking-guide/
+https://astroseo-io.pages.dev/blog/astro-mdx-seo-workflow/

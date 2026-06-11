@@ -1,0 +1,5 @@
+da99b0a feat: add content audit and trust pages
+5eb8a1d chore: ignore local worktrees
+10c520f chore: add google search console verification
+e786c71 fix: deploy at cloudflare pages root
+0745348 feat: add 40 seo articles

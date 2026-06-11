@@ -1,0 +1,15 @@
+.gitignore                        |   1 +
+ docs/content-consolidation-map.md |  58 +++++++++
+ package.json                      |   2 +
+ public/_redirects                 |  28 ++++
+ scripts/content-audit.mjs         | 263 ++++++++++++++++++++++++++++++++++++++
+ scripts/content-audit.test.mjs    | 180 ++++++++++++++++++++++++++
+ src/components/Footer.astro       |  22 +++-
+ src/config/site.ts                |   4 +
+ src/pages/about.astro             |  41 +++++-
+ src/pages/contact.astro           |  35 +++++
+ src/pages/disclaimer.astro        |  43 +++++++
+ src/pages/privacy.astro           |  46 +++++++
+ src/pages/terms.astro             |  43 +++++++
+ src/styles/global.css             | 121 ++++++++++++++++++
+ 14 files changed, 877 insertions(+), 10 deletions(-)

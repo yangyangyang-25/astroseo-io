@@ -1,0 +1,1 @@
+node -e 'const x={"@context":"https://schema.org","@type":"TechArticle",headline:"Example"}; JSON.parse(JSON.stringify(x)); console.log("valid TechArticle JSON")'

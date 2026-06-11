@@ -1,0 +1,1 @@
+grep -n 'mdx' astro.config.mjs package.json

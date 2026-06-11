@@ -1,0 +1,12 @@
+src
+src/components
+src/config
+src/content
+src/content/posts
+src/layouts
+src/lib
+src/pages
+src/pages/blog
+src/pages/category
+src/pages/tag
+src/styles

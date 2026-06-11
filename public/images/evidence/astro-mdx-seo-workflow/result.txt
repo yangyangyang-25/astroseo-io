@@ -1,0 +1,3 @@
+astro.config.mjs:2:import mdx from "@astrojs/mdx";
+astro.config.mjs:12:  integrations: [mdx(), sitemap()],
+package.json:17:    "@astrojs/mdx": "^4.0.0",

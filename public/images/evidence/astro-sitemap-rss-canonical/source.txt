@@ -1,0 +1,1 @@
+head -40 dist/sitemap-0.xml && head -20 dist/rss.xml

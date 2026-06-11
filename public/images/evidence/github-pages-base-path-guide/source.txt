@@ -1,0 +1,1 @@
+grep -nE 'site:|base:' astro.config.mjs

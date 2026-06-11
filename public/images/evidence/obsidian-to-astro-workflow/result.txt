@@ -1,0 +1,24 @@
+---
+title: "Publish from Obsidian to Astro Without Copying Private Notes"
+description: "A controlled Markdown workflow that maps note properties into Astro frontmatter, validates output, and keeps private vault content outside the repository."
+pubDate: 2026-06-07
+modDate: 2026-06-11
+author: "Jun Yang"
+category: "Content Workflow"
+tags: ["Obsidian", "Astro", "Publishing"]
+draft: false
+seoTitle: "Publish from Obsidian to Astro Without Copying Private Notes"
+seoDescription: "A controlled Markdown workflow that maps note properties into Astro frontmatter, validates output, and keeps private vault content outside the repository."
+---
+
+Connecting a full personal vault directly to a public repository creates unnecessary privacy and consistency risks. Publishing should be an explicit export step.
+
+## The implementation boundary
+
+Use a dedicated public-notes folder or demonstration vault. Map title, description, dates, author, category, tags, and draft state into the Astro schema, then copy only approved Markdown and assets.
+
+For Publish from Obsidian to Astro Without Copying Private Notes, the useful boundary is the smallest complete result that the repository can demonstrate. Supporting details stay in this guide when separating them would create a weaker URL, and claims stop where the saved output stops.
+
+## Reproducible example
+
+Run the following command from the repository root with the supported Node runtime:

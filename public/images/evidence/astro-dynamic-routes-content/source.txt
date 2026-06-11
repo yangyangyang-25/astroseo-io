@@ -1,0 +1,1 @@
+find dist/category dist/tag -name index.html | sort

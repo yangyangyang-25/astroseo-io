@@ -1,0 +1,23 @@
+/blog/[^
+/blog/astro-blog-post-template/
+/blog/astro-blog-seo-tutorial/
+/blog/astro-blog-seo-tutorial/index.html
+/blog/astro-blog-seo-tutorial/index.html` against the current production build.
+/blog/astro-content-collections-tutorial/
+/blog/astro-dynamic-routes-content/
+/blog/astro-internal-linking-guide/
+/blog/astro-mdx-seo-workflow/
+/blog/astro-sitemap-rss-canonical/
+/blog/astro-static-site-architecture/
+/blog/ci-build-checks-astro/
+/blog/deploy-astro-to-cloudflare-pages/
+/blog/deploy-astro-to-github-pages/
+/blog/github-pages-base-path-guide/
+/blog/indexability-checklist-content-sites/
+/blog/keyword-to-article-brief-workflow/
+/blog/markdown-link-audit-workflow/
+/blog/obsidian-to-astro-workflow/
+/blog/rollback-static-site-deployments/
+/blog/schema-markup-static-blog/
+/blog/technical-seo-audit-static-site/
+/blog/update-old-posts-seo-workflow/
