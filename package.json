@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "test": "node --test scripts/*.test.mjs",
+    "audit:content": "node scripts/content-audit.mjs",
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check"

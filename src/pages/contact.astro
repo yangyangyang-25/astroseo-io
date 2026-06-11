@@ -1,0 +1,35 @@
+---
+import { siteConfig } from "../config/site";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Contact" description="Contact AstroSEO.io through GitHub Issues." pathname="/contact/">
+  <section class="hero policy-hero">
+    <p class="meta">Contact</p>
+    <h1>Report a correction or reproducible problem.</h1>
+    <p>AstroSEO.io does not publish a public email address or operate a private support desk.</p>
+  </section>
+
+  <article class="policy-card prose">
+    <h2>Use GitHub Issues</h2>
+    <p>
+      Open an issue for factual corrections, broken links, content feedback, or
+      technical questions that include enough information to reproduce the
+      problem.
+    </p>
+    <p><a class="button-link" href={siteConfig.issuesUrl}>Open the AstroSEO.io Issues page</a></p>
+
+    <div class="notice">
+      <strong>Do not submit sensitive data.</strong> Never include credentials,
+      API tokens, account identifiers, private repository content, personal
+      information, or unpublished business data in a public issue.
+    </div>
+
+    <h2>Response expectations</h2>
+    <p>
+      Submitting an issue does not guarantee individual support, a response, or
+      a specific response time. Actionable corrections that improve a published
+      guide receive priority over general consulting requests.
+    </p>
+  </article>
+</BaseLayout>

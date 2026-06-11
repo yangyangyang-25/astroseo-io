@@ -5,10 +5,45 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <BaseLayout title="About" description="About AstroSEO.io" pathname="/about/">
   <section class="hero">
     <p class="meta">About</p>
-    <h1>AstroSEO.io</h1>
+    <h1>Practical Astro publishing, with the evidence left in.</h1>
     <p>
-      This site publishes practical, implementation-first guides for building
-      fast static content sites with Astro.
+      AstroSEO.io is an independent technical publication about building,
+      auditing, and deploying content-focused Astro websites.
     </p>
   </section>
+
+  <article class="policy-card prose">
+    <h2>Purpose and audience</h2>
+    <p>
+      The site is for developers, independent publishers, and content teams who
+      need concrete implementation details rather than generic SEO advice. The
+      core topics are Astro architecture, technical SEO, static deployment,
+      editorial workflows, and reusable publishing templates.
+    </p>
+
+    <h2>Editorial principles</h2>
+    <p>
+      Articles are written around a specific problem and expected result. A
+      retained tutorial includes commands, configuration, or a structured
+      workflow; a saved evidence artifact; a verification method; and an honest
+      limitation or recommendation. Overlapping search intents are consolidated
+      instead of being expanded into multiple shallow pages.
+    </p>
+
+    <h2>Author and testing policy</h2>
+    <p>
+      AstroSEO.io is edited by Jun Yang. Tutorials are tested where practical
+      against the repository and deployment described in the article. The site
+      does not claim that one setup is universal, and it does not invent test
+      results, credentials, professional qualifications, or performance data.
+    </p>
+
+    <h2>Corrections and updates</h2>
+    <p>
+      Material changes to Astro, hosting platforms, or the demonstrated project
+      can trigger a review. Reproducible corrections can be submitted through
+      the public repository Issues page. Updated articles retain their stable
+      URL whenever the original intent remains valid.
+    </p>
+  </article>
 </BaseLayout>

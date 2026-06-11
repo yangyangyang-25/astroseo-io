@@ -1,0 +1,43 @@
+---
+import { siteConfig } from "../config/site";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Terms of Use" description="Terms of use for AstroSEO.io." pathname="/terms/">
+  <section class="hero policy-hero">
+    <p class="meta">Terms</p>
+    <h1>Terms of Use</h1>
+    <p>Last updated: {siteConfig.lastPolicyUpdate}</p>
+  </section>
+
+  <article class="policy-card prose">
+    <h2>Informational use</h2>
+    <p>
+      The site provides general technical information and examples. You are
+      responsible for reviewing commands, configuration, licenses, security
+      implications, and service terms before applying them to your own systems.
+    </p>
+
+    <h2>Copyright and reuse</h2>
+    <p>
+      Original articles, screenshots, and site presentation are protected by
+      applicable copyright law. Short quotations with attribution and links are
+      permitted where allowed by law. Republishing complete articles or evidence
+      assets as your own is not permitted without written authorization.
+    </p>
+
+    <h2>Availability and changes</h2>
+    <p>
+      The site may change, remove, consolidate, or redirect content without
+      guaranteeing uninterrupted availability. No service-level commitment is
+      provided.
+    </p>
+
+    <h2>External services</h2>
+    <p>
+      GitHub, Cloudflare, Google, and other referenced services operate under
+      their own terms. AstroSEO.io is not responsible for their availability,
+      pricing, policy changes, or content.
+    </p>
+  </article>
+</BaseLayout>

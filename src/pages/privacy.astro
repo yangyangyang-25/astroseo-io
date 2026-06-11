@@ -1,0 +1,46 @@
+---
+import { siteConfig } from "../config/site";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Privacy Policy" description="Privacy policy for AstroSEO.io." pathname="/privacy/">
+  <section class="hero policy-hero">
+    <p class="meta">Privacy</p>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: {siteConfig.lastPolicyUpdate}</p>
+  </section>
+
+  <article class="policy-card prose">
+    <h2>Static hosting and server logs</h2>
+    <p>
+      AstroSEO.io is a static website hosted on Cloudflare Pages. Cloudflare may
+      process connection, security, and server-log information such as IP
+      addresses, request paths, user agents, timestamps, and threat signals to
+      deliver and protect the site. That processing is governed by Cloudflare's
+      own policies.
+    </p>
+
+    <h2>Search and measurement tools</h2>
+    <p>
+      Google Search Console is used to monitor crawling, indexing, and search
+      performance. The current site source does not install a visitor analytics
+      script, advertising script, account system, contact form, or newsletter
+      form. If analytics or advertising is introduced later, this policy and
+      any required consent mechanism will be updated before deployment.
+    </p>
+
+    <h2>External links</h2>
+    <p>
+      Articles link to GitHub, hosting providers, documentation, and other
+      third-party services. Following an external link subjects the visitor to
+      that service's privacy practices, which AstroSEO.io does not control.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Privacy-related corrections can be raised through the public
+      <a href={siteConfig.issuesUrl}>GitHub Issues page</a>. Do not include
+      personal or sensitive information in a public issue.
+    </p>
+  </article>
+</BaseLayout>

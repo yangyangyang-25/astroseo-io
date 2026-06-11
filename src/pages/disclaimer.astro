@@ -1,0 +1,43 @@
+---
+import { siteConfig } from "../config/site";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Disclaimer" description="Technical content disclaimer for AstroSEO.io." pathname="/disclaimer/">
+  <section class="hero policy-hero">
+    <p class="meta">Disclaimer</p>
+    <h1>Technical Content Disclaimer</h1>
+    <p>Last updated: {siteConfig.lastPolicyUpdate}</p>
+  </section>
+
+  <article class="policy-card prose">
+    <h2>No warranty</h2>
+    <p>
+      Technical examples are provided as-is without warranties of accuracy,
+      fitness, compatibility, availability, ranking improvement, traffic, or
+      advertising approval. Software and hosting behavior can change after an
+      article is published.
+    </p>
+
+    <h2>Verify before production use</h2>
+    <p>
+      Run commands in an isolated environment, review diffs, back up important
+      data, and verify generated output before deploying. You remain responsible
+      for security, costs, legal compliance, data handling, and recovery plans.
+    </p>
+
+    <h2>Not professional advice</h2>
+    <p>
+      Content is not legal, financial, tax, security-audit, or other professional
+      advice. Consult an appropriately qualified professional when a decision
+      carries material risk.
+    </p>
+
+    <h2>External links and services</h2>
+    <p>
+      Links are provided for context and do not imply endorsement. AstroSEO.io
+      does not control third-party documentation, software, accounts, or service
+      outcomes.
+    </p>
+  </article>
+</BaseLayout>
